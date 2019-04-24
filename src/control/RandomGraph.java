@@ -2,35 +2,35 @@ package control;
 
 import java.util.Random;
 
+import model.Graph.Edge;
 import model.Graph.Node;
-import model.Graph.HyperEdge;
-import model.Graph.HyperGraph;
+import model.Graph.Graph;
 
 /**
- * This is a class to create a random HyperGraph.
+ * This is a class to create a random Graph.
  *
  *
  * @author Matthias Duerksen
- *@see HyperGraph
+ *@see Graph
  */
 class RandomGraph {
 
 
     /**
-     * Create a random HyperGraph for a set of node label and a set edge labels.
+     * Create a random Graph for a set of node label and a set edge labels.
      * @param numNodes number of nodes for the graph.
      * @param numEdges number of edges for the graph.
      * @param numNodeLabels number of possible different node labels for the graph.
      * @param numEdgeLabels number of possible different node labels for the graph.
-     * @return a random constructed HyperGraph.
+     * @return a random constructed Graph.
      */
-    public static HyperGraph constructRandomGraph(int numNodes, int numEdges, int numNodeLabels, int numEdgeLabels) {
+    public static Graph constructRandomGraph(int numNodes, int numEdges, int numNodeLabels, int numEdgeLabels) {
         if (numNodeLabels==0)numNodeLabels=1;
         if (numEdgeLabels==0)numEdgeLabels=1;
 
-        HyperGraph graph = new HyperGraph();
+        Graph graph = new Graph();
         createNodes(graph, numNodes, numNodeLabels);
-        createEdges(graph, numEdges, numEdgeLabels);
+//        createEdges(graph, numEdges, numEdgeLabels);
 
         return graph;
     }
@@ -41,7 +41,7 @@ class RandomGraph {
      * @param numNodes number of how many nodes are generated.
      * @param numNodeLabels number of how many possible different node labels are generated.
      */
-    private static void createNodes(HyperGraph graph, int numNodes, int numNodeLabels) {
+    private static void createNodes(Graph graph, int numNodes, int numNodeLabels) {
         String[] nodeLabels = createNodeLabels(numNodeLabels);
         for (int i = 0; i < numNodes; i++) {
             graph.add(new Node(getRandomLabel(nodeLabels)));
@@ -63,25 +63,25 @@ class RandomGraph {
     }
 
 
-    /**
-     * Add a set of edges to the graph.
-     * @param graph the graph for which the method will be executed.
-     * @param numEdges number of how many edges are generated.
-     * @param numEdgeLabels number of how many possible different edge labels are generated.
-     */
-    private static void createEdges(HyperGraph graph, int numEdges, int numEdgeLabels) {
-        String[] edgeLabels = createEdgeLabels(numEdgeLabels);
-        for (int i = 0; i < numEdges; i++) {
-            Random generator = new Random();
-
-            Object[] values = graph.getAllNodes().values().toArray();
-            Node startnode = (Node) values[generator.nextInt(values.length)];
-            Node endnode = (Node) values[generator.nextInt(values.length)];
-
-
-            graph.add(new HyperEdge(new Node[]{startnode}, new Node[]{endnode}, getRandomLabel(edgeLabels)));
-        }
-    }
+//    /**
+//     * Add a set of edges to the graph.
+//     * @param graph the graph for which the method will be executed.
+//     * @param numEdges number of how many edges are generated.
+//     * @param numEdgeLabels number of how many possible different edge labels are generated.
+//     */
+//    private static void createEdges(Graph graph, int numEdges, int numEdgeLabels) {
+//        String[] edgeLabels = createEdgeLabels(numEdgeLabels);
+//        for (int i = 0; i < numEdges; i++) {
+//            Random generator = new Random();
+//
+//            Object[] values = graph.getAllNodes().values().toArray();
+//            Node startnode = (Node) values[generator.nextInt(values.length)];
+//            Node endnode = (Node) values[generator.nextInt(values.length)];
+//
+//
+//            graph.add(new Edge(new Node[]{startnode},1, new Node[]{endnode},1, getRandomLabel(edgeLabels)));
+//        }
+//    }
 
     /**
      * Create a set of edge labels.
@@ -118,13 +118,13 @@ class RandomGraph {
      * @see CompressionControl
      */
     private static void compressRandomGraph(int numNodes, int numEdges, int numNodeLabels, int numEdgeLabels) {
-//        HyperGraph graph= RandomGraph.constructRandomGraph(numNodes,numEdges,numNodeLabels,numEdgeLabels);
+//        Graph graph= RandomGraph.constructRandomGraph(numNodes,numEdges,numNodeLabels,numEdgeLabels);
 //        CompressionControl compressionControl = new CompressionControl();
 //
-//        List<Tuple<HyperGraph, List<BasicDigram>>> tuples = compressionControl.graphCompression(graph,true);
+//        List<Tuple<Graph, List<BasicDigram>>> tuples = compressionControl.graphCompression(graph,true);
 //
 //
-//        HyperGraph compressedGraph= tuples.getLast().x;
+//        Graph compressedGraph= tuples.getLast().x;
 //        LinkedList<BasicDigram> usedDigrams= tuples.getLast().y;
 //        System.out.println("Compression finished for a graph with the parameters: "+numNodes+" nodes, "+numEdges+" edges, "+numNodeLabels+" different node labels, "+ numEdgeLabels+ " different edge labels\n");
 //        System.out.println("Compressed Graph: "+compressedGraph.getAllNodes().size()+" nodes, "+compressedGraph.getAllEdges().size()+" edges");

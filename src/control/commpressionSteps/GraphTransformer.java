@@ -17,21 +17,21 @@ public class GraphTransformer {
      * @param untransformedGraph the untransformed graph.
      * @return the transformed graph.
      */
-    public static HyperGraph transformGraph(HyperGraph untransformedGraph){
-        HyperGraph graph = new HyperGraph();
+    public static Graph transformGraph(Graph untransformedGraph){
+        Graph graph = new Graph();
         graph.addAll(untransformedGraph.getAllNodes());
         HashMap<Integer, Edge> oldEdges = untransformedGraph.getAllEdges();
 
-        //Foreach HyperEdge "edge"  in the untransformed HyperGraph
+        //Foreach Edge "edge"  in the untransformed HyperGraph
         for (Map.Entry<Integer, Edge> entry : oldEdges.entrySet()) {
-            HyperEdge edge = (HyperEdge) entry.getValue();
+            Edge edge = (Edge) entry.getValue();
             Node node = new Node(edge.getLabel());
             graph.add(node);
-            for (Node startnode : edge.getStartnodes()) {
-                graph.add(new SimpleEdge(startnode, 1, node, 1));
+            for (Node startnode : edge.getStartnodes().keySet()) {
+                graph.add(new Edge(startnode, 1, node, 1,Edge.EMPTY_LABEL));
             }
-            for (Node endnode : edge.getEndnodes()) {
-                graph.add(new SimpleEdge(node, 1, endnode, 1));
+            for (Node endnode : edge.getEndnodes().keySet()) {
+                graph.add(new Edge(node, 1, endnode, 1,Edge.EMPTY_LABEL));
             }
 
         }

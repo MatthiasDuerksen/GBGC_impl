@@ -113,7 +113,7 @@ public class Edge extends GraphElement {
             Node node = (Node) obj;
             newStartNodes.put(node.deepCopy(), endnodes.get(node).intValue());
         }
-        return new Edge(newStartNodes, newEndNodes, new String());
+        return new Edge(newStartNodes, newEndNodes, new String(label));
     }
 
 

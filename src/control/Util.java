@@ -15,9 +15,36 @@ import model.Graph.Edge;
 class Util {
 
     public static void main(String[] a) {
-        createDebuggingGraph();
+        createTempGraph();
         System.out.println(DigramLists.getInstance().toString());
     }
+
+    public static Graph createTempGraph() {
+        Graph graph = new Graph();
+
+        Node[] nodes = new Node[4];
+        nodes[0] = new Node("u");
+        nodes[1] = new Node("v");
+        nodes[2] = new Node("u");
+        nodes[3] = new Node("v");
+
+
+        Edge[] edges = new Edge[2];
+        edges[0] = new Edge(nodes[0], 1, nodes[1], 1);
+        edges[1] = new Edge(nodes[2], 1, nodes[3], 1);
+
+        for (Node node : nodes) {
+            graph.add(node);
+        }
+        for (Edge edge : edges) {
+            graph.add(edge);
+        }
+        CompressionControl control = new CompressionControl(graph);
+        control.graphCompression(false);
+
+        return graph;
+    }
+
 
     public static Graph createDebuggingGraph() {
         Graph graph = new Graph();
@@ -48,7 +75,6 @@ class Util {
         for (Edge edge : edges) {
             graph.add(edge);
         }
-        graph.initGraph();
         CompressionControl control = new CompressionControl(graph);
         control.graphCompression(false);
 

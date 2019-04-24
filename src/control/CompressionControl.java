@@ -59,31 +59,31 @@ public class CompressionControl {
         NewDigramFinder digramFinder = new NewDigramFinder(null);
         digramFinder.seachForDigrams(graph);
 
-        while (true) {
-            DigramRule digramToReplace = null;
-            int maxDigramSize = 0;
-            if (basicDigramList.getMaxDigram() != null) {
-                digramToReplace = basicDigramList.getMaxDigram();
-                maxDigramSize = basicDigramList.getMaxDigram().getSize();
-            }
-            if (adjacencyDigramList.getMaxDigram() != null && adjacencyDigramList.getMaxDigram().getSize() > maxDigramSize) {
-                digramToReplace = adjacencyDigramList.getMaxDigram();
-            }
-            if (digramToReplace == null) {
-                break;
-            }
-
-            replaceAllOccurrences(digramToReplace);
-            appliedDigrams.add(digramToReplace);
-
-            addCurrentGraph(graph, appliedDigrams);
-        }
-
-        pruning(graph, appliedDigrams);
-        addCurrentGraph(graph, appliedDigrams);
-
-        graph = edgeOptimization(graph);
-        addCurrentGraph(graph, appliedDigrams);
+//        while (true) {
+//            DigramRule digramToReplace = null;
+//            int maxDigramSize = 0;
+//            if (basicDigramList.getMaxDigram() != null) {
+//                digramToReplace = basicDigramList.getMaxDigram();
+//                maxDigramSize = basicDigramList.getMaxDigram().getSize();
+//            }
+//            if (adjacencyDigramList.getMaxDigram() != null && adjacencyDigramList.getMaxDigram().getSize() > maxDigramSize) {
+//                digramToReplace = adjacencyDigramList.getMaxDigram();
+//            }
+//            if (digramToReplace == null) {
+//                break;
+//            }
+//
+//            replaceAllOccurrences(digramToReplace);
+//            appliedDigrams.add(digramToReplace);
+//
+//            addCurrentGraph(graph, appliedDigrams);
+//        }
+//
+//        pruning(graph, appliedDigrams);
+//        addCurrentGraph(graph, appliedDigrams);
+//
+//        graph = edgeOptimization(graph);
+//        addCurrentGraph(graph, appliedDigrams);
 
 
         return allGraphs;

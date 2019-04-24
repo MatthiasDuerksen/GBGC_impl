@@ -1,6 +1,7 @@
 package control;
 
 import model.Digram.DigramType;
+import model.Digram.RuleGenerator;
 import model.Graph.Edge;
 import model.Graph.Graph;
 import model.Graph.GraphElement;
@@ -12,6 +13,7 @@ import java.util.*;
 public class SearchWorker extends Thread {
 
     private Graph graph;
+    private RuleGenerator ruleGenerator = new RuleGenerator();
 
 
     private List<GraphElement> graphElements;
@@ -35,7 +37,7 @@ public class SearchWorker extends Thread {
                 //Adjacency Digram
                 if (Config.isDigramTypeInUse(DigramType.ADJACENCY_DIGRAM)) {
                     List<Edge> incidentNonCircleEdges = new ArrayList<>();
-                    for (Edge edge : node.getIncedentEdges()) {
+                    for (Edge edge : graph.getAllIncidentEdges(node)) {
                         if (!edge.isCircle() && edge.isSimpleEdge()) {
                             incidentNonCircleEdges.add(edge);
                         }
@@ -73,11 +75,8 @@ public class SearchWorker extends Thread {
 
                 //Basic Node Digram evertime possible
                 if (Config.isDigramTypeInUse(DigramType.BASIC_NODE_DIGRAM)) {
-                    //DigramLists.getInstance().getDigramMap(DigramType.BASIC_NODE_DIGRAM).addOccurence(edge);
                     System.out.println("Found Basic Digram" + edge);
-
-
-
+                    ruleGenerator.generateBasicNodeRule(edge);
 
                 }
 

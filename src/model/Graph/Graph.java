@@ -29,18 +29,6 @@ public class Graph {
     }
 
 
-    public void initGraph() {
-        for (Edge edge : edges.values()) {
-            for (Node node : edge.getStartnodes().keySet()) {
-                node.addIncedentEdge(edge);
-            }
-            for (Node node : edge.getEndnodes().keySet()) {
-                node.addIncedentEdge(edge);
-            }
-        }
-    }
-
-
     /**
      * Checks whether the graph contains a node with the label 'l'.
      *

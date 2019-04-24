@@ -17,11 +17,47 @@ public class RuleGenerator {
         return null;
     }
 
-    public void generateBasicNodeRule(Edge edge) {
+    public void generateTestRule(Edge edge) {
         DigramLists.getInstance().getDigramMap(DigramType.BASIC_NODE_DIGRAM);
         DigramLists.getInstance().getDigramMap(DigramType.BASIC_NODE_DIGRAM).addOccurences(null, null, edge, null);
 
 
+    }
+
+    public void generateBasicNodeRule(Edge edge) {
+
+        List<String> internalNodes = new ArrayList<>();
+        List<String> externalNodes = new ArrayList<>();
+        Map<String, Map<String, Integer>> edgeStartnodes = new LinkedHashMap<>();
+        Map<String, Map<String, Integer>> edgeEndnodes = new LinkedHashMap<>();
+        edgeStartnodes.put(edge.getLabel(), new LinkedHashMap<>());
+        edgeEndnodes.put(edge.getLabel(), new LinkedHashMap<>());
+
+        for (Node node : edge.getStartnodes().keySet()) {
+            internalNodes.add(node.getLabel());
+            edgeStartnodes.get(edge.getLabel()).put(node.getLabel(), edge.getStartnodes().get(node));
+        }
+        for (Node node : edge.getEndnodes().keySet()) {
+            internalNodes.add(node.getLabel());
+            edgeEndnodes.get(edge.getLabel()).put(node.getLabel(), edge.getEndnodes().get(node));
+        }
+
+        DigramRule tempDigramRule = new DigramRule(DigramType.BASIC_NODE_DIGRAM, internalNodes, externalNodes, edgeStartnodes, edgeEndnodes);
+
+        DigramRule digramRule = DigramLists.getInstance().getDigramMap(DigramType.BASIC_NODE_DIGRAM).getDigramRule(tempDigramRule);
+
+        List<Node> internalNode = new ArrayList<>();
+        List<Node> externalNode = new ArrayList<>();
+        List<Edge> edges = new ArrayList<>();
+        for (Node node : edge.getStartnodes().keySet()) {
+            internalNode.add(node);
+        }
+        for (Node node : edge.getEndnodes().keySet()) {
+            internalNode.add(node);
+        }
+        edges.add(edge);
+        DigramOccurrence digramOccurrence = new DigramOccurrence(digramRule, internalNode, externalNode, edges);
+        digramRule.getOccurrences().add(digramOccurrence);
     }
 
     public void generateM3Rule(Node node1, Node node2, Node node3, Edge edge1, Edge edge2) {

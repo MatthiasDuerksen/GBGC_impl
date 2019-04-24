@@ -37,7 +37,7 @@ public class NewDigramFinder {
         }
 
 
-        for (int i = 0; i < partitionSize; i++) {
+        for (int i = 0; i < Config.NUMBER_OF_SEARCHWORKERS; i++) {
             workers[i] = new SearchWorker(graph, partitions.get(i));
         }
 

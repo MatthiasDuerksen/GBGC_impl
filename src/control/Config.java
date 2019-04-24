@@ -11,7 +11,7 @@ public class Config {
 
     private static Map<DigramType, Boolean> digranTypeUsed = new HashMap<>();
 
-    public static final int NUMBER_OF_SEARCHWORKERS = 4;
+    public static final int NUMBER_OF_SEARCHWORKERS = 1;
 
 
     public static Integer getDigramTypeWeight(DigramType digramType) {
@@ -32,7 +32,7 @@ public class Config {
 
     private static void initDigramTypeInUse() {
         digranTypeUsed.put(DigramType.BASIC_NODE_DIGRAM, true);
-        digranTypeUsed.put(DigramType.CIRCLE_DIGRAM, true);
+        digranTypeUsed.put(DigramType.CIRCLE_DIGRAM, false);
         digranTypeUsed.put(DigramType.ADJACENCY_DIGRAM, false);
     }
 

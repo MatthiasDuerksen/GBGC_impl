@@ -22,7 +22,7 @@ public class DigramRule {
     private Map<String, Map<String, Integer>> edgeStartnodes = new LinkedHashMap<>();
     private Map<String, Map<String, Integer>> edgeEndNodes = new LinkedHashMap<>();
 
-    protected List<DigramOccurrence> occurrences;
+    protected List<DigramOccurrence> occurrences= new ArrayList<>();
     protected final Map<String, List<Tuple<Integer, Integer>>> mapEquivClasses = new HashMap<>();
     /**
      * the non terminal from the digram.
@@ -107,7 +107,7 @@ public class DigramRule {
         String string = "\nDigramRule " + nonterminal + ": ";
         for (DigramOccurrence digramOccurrence : occurrences) {
             string += "\n";
-            string += "----------" + digramOccurrence + toString();
+            string += "----------" + digramOccurrence.toString();
 
         }
         return string;
@@ -135,15 +135,103 @@ public class DigramRule {
             }
         }
 
-        if ((edgeStartnodes.size() == digramRule.edgeStartnodes.size() && edgeEndNodes.size() == digramRule.edgeEndNodes.size())
-        {
+        //EdgeStartNodes
+        if (!(edgeStartnodes.size() == digramRule.edgeStartnodes.size() && edgeEndNodes.size() == digramRule.edgeEndNodes.size())) {
             return false;
         }
-        for (int i = 0; i < edgeStartnodes.size(); i++) {
-            //TODO Change Map to Set
+        for (String edgeID : edgeStartnodes.keySet()) {
+            if (digramRule.edgeStartnodes.get(edgeID) == null && edgeStartnodes.get(edgeID).size() != digramRule.edgeStartnodes.get(edgeID).size()) {
+                return false;
+            }
+            for (String nodeID : edgeStartnodes.get(edgeID).keySet()) {
+                if (digramRule.edgeStartnodes.get(edgeID).get(nodeID) == null) {
+                    return false;
+                }
+                if (!edgeStartnodes.get(edgeID).get(nodeID).equals(digramRule.edgeStartnodes.get(edgeID).get(nodeID))) {
+                    return false;
+                }
+            }
         }
 
+        //EdgeStartNodes
+        if (!(edgeEndNodes.size() == digramRule.edgeEndNodes.size() && edgeEndNodes.size() == digramRule.edgeEndNodes.size())) {
+            return false;
+        }
+        for (String edgeID : edgeEndNodes.keySet()) {
+            if (digramRule.edgeEndNodes.get(edgeID) == null && edgeEndNodes.get(edgeID).size() != digramRule.edgeEndNodes.get(edgeID).size()) {
+                return false;
+            }
+            for (String nodeID : edgeEndNodes.get(edgeID).keySet()) {
+                if (digramRule.edgeEndNodes.get(edgeID).get(nodeID) == null) {
+                    return false;
+                }
+                if (!edgeEndNodes.get(edgeID).get(nodeID).equals(digramRule.edgeEndNodes.get(edgeID).get(nodeID))) {
+                    return false;
+                }
+            }
+        }
 
+        return true;
     }
 
+    @Override
+    public boolean equals2(Object obj) {
+        DigramRule digramRule = (DigramRule) obj;
+        if (!digramType.equals(digramRule.digramType)) {
+            return false;
+        }
+
+        //check nodes
+        if (!(internalNodes.size() == digramRule.internalNodes.size() && externalNodes.size() == digramRule.externalNodes.size())) {
+            return false;
+        }
+        for (int i = 0; i < internalNodes.size(); i++) {
+            if (!internalNodes.get(i).equals(digramRule.internalNodes.get(i))) {
+                return false;
+            }
+        }
+        for (int i = 0; i < externalNodes.size(); i++) {
+            if (!externalNodes.get(i).equals(digramRule.externalNodes.get(i))) {
+                return false;
+            }
+        }
+
+        //EdgeStartNodes
+        if (!(edgeStartnodes.size() == digramRule.edgeStartnodes.size() && edgeEndNodes.size() == digramRule.edgeEndNodes.size())) {
+            return false;
+        }
+        for (String edgeID : edgeStartnodes.keySet()) {
+            if (digramRule.edgeStartnodes.get(edgeID) == null && edgeStartnodes.get(edgeID).size() != digramRule.edgeStartnodes.get(edgeID).size()) {
+                return false;
+            }
+            for (String nodeID : edgeStartnodes.get(edgeID).keySet()) {
+                if (digramRule.edgeStartnodes.get(edgeID).get(nodeID) == null) {
+                    return false;
+                }
+                if (!edgeStartnodes.get(edgeID).get(nodeID).equals(digramRule.edgeStartnodes.get(edgeID).get(nodeID))) {
+                    return false;
+                }
+            }
+        }
+
+        //EdgeStartNodes
+        if (!(edgeEndNodes.size() == digramRule.edgeEndNodes.size() && edgeEndNodes.size() == digramRule.edgeEndNodes.size())) {
+            return false;
+        }
+        for (String edgeID : edgeEndNodes.keySet()) {
+            if (digramRule.edgeEndNodes.get(edgeID) == null && edgeEndNodes.get(edgeID).size() != digramRule.edgeEndNodes.get(edgeID).size()) {
+                return false;
+            }
+            for (String nodeID : edgeEndNodes.get(edgeID).keySet()) {
+                if (digramRule.edgeEndNodes.get(edgeID).get(nodeID) == null) {
+                    return false;
+                }
+                if (!edgeEndNodes.get(edgeID).get(nodeID).equals(digramRule.edgeEndNodes.get(edgeID).get(nodeID))) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
 }

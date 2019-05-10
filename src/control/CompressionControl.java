@@ -1,10 +1,12 @@
 package control;
 
+import control.commpressionSteps.DigramOccurrencesReplacer;
+import control.commpressionSteps.DigramUpdater;
 import control.commpressionSteps.GraphTransformer;
 import control.commpressionSteps.NewDigramFinder;
 import model.*;
 import model.Digram.DigramRule;
-import model.DigramOccurrence.DigramOccurrence;
+import model.DigramList.DigramLists;
 import model.Graph.*;
 
 import java.util.*;
@@ -22,7 +24,7 @@ public class CompressionControl {
      * all applied appliedDigrams.
      */
     private final LinkedList<DigramRule> appliedDigrams = new LinkedList<>();
-
+    private DigramOccurrencesReplacer digramOccurrencesReplacer = new DigramOccurrencesReplacer();
 
     private Graph graph;
 
@@ -40,7 +42,6 @@ public class CompressionControl {
     public CompressionControl(Graph graph) {
         this.graph = graph;
         workers = new SearchWorker[/*Runtime.getRuntime().availableProcessors() * 2*/1];
-        Config.initConfigs();
 
     }
 
@@ -49,15 +50,35 @@ public class CompressionControl {
      *
      * @return all intermediate compression results  and thus also the compressed graph.
      */
-    public List<Tuple<Graph, List<DigramRule>>> graphCompression(boolean transform) {
-        addCurrentGraph(graph, appliedDigrams);
+    public List<Tuple<Graph, List<DigramRule>>> graphCompression() {
+        //addCurrentGraph(graph, appliedDigrams);
 
-        if (transform) {
+        if (Config.isExecuteTranformGraph()) {
             graph = GraphTransformer.transformGraph(graph);
         }
-        addCurrentGraph(graph, appliedDigrams);
-        NewDigramFinder digramFinder = new NewDigramFinder(null);
+        //addCurrentGraph(graph, appliedDigrams);
+        NewDigramFinder digramFinder = new NewDigramFinder();
         digramFinder.seachForDigrams(graph);
+
+
+        while (true) {
+//            System.out.println(graph.size());
+//            System.out.println(DigramLists.getInstance().toString());
+            DigramRule digramToReplace = null;
+            digramToReplace = DigramLists.getInstance().getNextDigramRule(false);
+            if (digramToReplace == null) {
+                break;
+            }
+
+            digramOccurrencesReplacer.replaceOccurrences(digramToReplace,graph);
+
+            //appliedDigrams.add(digramToReplace);
+
+            //addCurrentGraph(graph, appliedDigrams);
+
+            //update DigramLists, currently new Search of DigramLists
+            new DigramUpdater().updateDigrams(digramFinder, graph);
+        }
 
 //        while (true) {
 //            DigramRule digramToReplace = null;
@@ -78,7 +99,7 @@ public class CompressionControl {
 //
 //            addCurrentGraph(graph, appliedDigrams);
 //        }
-//
+
 //        pruning(graph, appliedDigrams);
 //        addCurrentGraph(graph, appliedDigrams);
 //

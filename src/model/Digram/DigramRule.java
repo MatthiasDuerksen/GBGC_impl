@@ -1,9 +1,11 @@
 package model.Digram;
 
+import control.Config;
 import model.DigramOccurrence.DigramOccurrence;
 import model.Graph.Edge;
 import model.Graph.Node;
 import model.Tuple;
+import scala.Int;
 import scala.util.parsing.combinator.testing.Str;
 
 import java.util.*;
@@ -16,14 +18,14 @@ public class DigramRule {
      * counter for the identifier of a digram.
      */
     private static int digramCounter = 0;
-    private List<String> internalNodes = new ArrayList<>();
-    private List<String> externalNodes = new ArrayList<>();
-    //          Edge-ID   Node-ID Equivalencclass
-    private Map<String, Map<String, Integer>> edgeStartnodes = new LinkedHashMap<>();
-    private Map<String, Map<String, Integer>> edgeEndNodes = new LinkedHashMap<>();
+    private List<Node> internalNodes = new ArrayList<>();
+    private List<Node> externalNodes = new ArrayList<>();
+    private List<Edge> edges = new ArrayList<>();
 
-    protected List<DigramOccurrence> occurrences= new ArrayList<>();
-    protected final Map<String, List<Tuple<Integer, Integer>>> mapEquivClasses = new HashMap<>();
+
+    protected List<DigramOccurrence> occurrences = new ArrayList<>();
+    //foreach internalNode an offset
+    protected final Map<Node, Integer> mapEquivOffset = new HashMap<>();
     /**
      * the non terminal from the digram.
      */
@@ -34,20 +36,20 @@ public class DigramRule {
      */
     protected boolean beenApplied = false;
 
-    protected int equivClassCounter = 1;
-
-
-    private DigramRule(DigramType digramType) {
-        this.occurrences = new ArrayList<>();
-        this.digramType = digramType;
-    }
-
-    public DigramRule(DigramType digramType, List<String> internalNodes, List<String> externalNodes, Map<String, Map<String, Integer>> edgeStartnodes, Map<String, Map<String, Integer>> edgeEndNodes) {
+    public DigramRule(DigramType digramType, List<Node> internalNodes, List<Node> externalNodes, List<Edge> edges) {
         this.digramType = digramType;
         this.internalNodes = internalNodes;
         this.externalNodes = externalNodes;
-        this.edgeStartnodes = edgeStartnodes;
-        this.edgeEndNodes = edgeEndNodes;
+        this.edges = edges;
+        initEquivOffset();
+    }
+
+    private void initEquivOffset() {
+        int currentOffset = 0;
+        for (Node node : internalNodes) {
+            mapEquivOffset.put(node, currentOffset);
+            currentOffset += node.getNumEquivClasses();
+        }
     }
 
     /**
@@ -102,15 +104,8 @@ public class DigramRule {
     }
 
 
-    @Override
-    public String toString() {
-        String string = "\nDigramRule " + nonterminal + ": ";
-        for (DigramOccurrence digramOccurrence : occurrences) {
-            string += "\n";
-            string += "----------" + digramOccurrence.toString();
-
-        }
-        return string;
+    public boolean replacesToANode() {
+        return Config.digramTypesWichReplacesToNodes.get(digramType.toString()).equals(Node.class);
     }
 
     @Override
@@ -125,113 +120,81 @@ public class DigramRule {
             return false;
         }
         for (int i = 0; i < internalNodes.size(); i++) {
-            if (!internalNodes.get(i).equals(digramRule.internalNodes.get(i))) {
-                return false;
-            }
-        }
-        for (int i = 0; i < externalNodes.size(); i++) {
-            if (!externalNodes.get(i).equals(digramRule.externalNodes.get(i))) {
+            if (!internalNodes.get(i).getLabel().equals(digramRule.internalNodes.get(i).getLabel())) {
                 return false;
             }
         }
 
-        //EdgeStartNodes
-        if (!(edgeStartnodes.size() == digramRule.edgeStartnodes.size() && edgeEndNodes.size() == digramRule.edgeEndNodes.size())) {
+
+        if (edges.size() != digramRule.edges.size()) {
             return false;
-        }
-        for (String edgeID : edgeStartnodes.keySet()) {
-            if (digramRule.edgeStartnodes.get(edgeID) == null && edgeStartnodes.get(edgeID).size() != digramRule.edgeStartnodes.get(edgeID).size()) {
-                return false;
-            }
-            for (String nodeID : edgeStartnodes.get(edgeID).keySet()) {
-                if (digramRule.edgeStartnodes.get(edgeID).get(nodeID) == null) {
-                    return false;
-                }
-                if (!edgeStartnodes.get(edgeID).get(nodeID).equals(digramRule.edgeStartnodes.get(edgeID).get(nodeID))) {
-                    return false;
-                }
-            }
         }
 
-        //EdgeStartNodes
-        if (!(edgeEndNodes.size() == digramRule.edgeEndNodes.size() && edgeEndNodes.size() == digramRule.edgeEndNodes.size())) {
-            return false;
-        }
-        for (String edgeID : edgeEndNodes.keySet()) {
-            if (digramRule.edgeEndNodes.get(edgeID) == null && edgeEndNodes.get(edgeID).size() != digramRule.edgeEndNodes.get(edgeID).size()) {
+        for (int i = 0; i < edges.size(); i++) {
+            if (!edges.get(i).getLabel().equals(digramRule.edges.get(i).getLabel())) {
                 return false;
             }
-            for (String nodeID : edgeEndNodes.get(edgeID).keySet()) {
-                if (digramRule.edgeEndNodes.get(edgeID).get(nodeID) == null) {
-                    return false;
+
+            //Check equiv from startnodes
+            for (int j = 0; j < edges.get(i).getStartnodes().size(); j++) {
+                Node node1 = (Node) edges.get(i).getStartnodes().keySet().toArray()[j];
+                Node node2 =(Node) digramRule.edges.get(i).getStartnodes().keySet().toArray()[j];
+                if (internalNodes.contains(node1)) {
+                    if (!(edges.get(i).getStartnodes().get(node1).equals( digramRule.edges.get(i).getStartnodes().get(node2)))){
+                        return false;
+                    }
                 }
-                if (!edgeEndNodes.get(edgeID).get(nodeID).equals(digramRule.edgeEndNodes.get(edgeID).get(nodeID))) {
-                    return false;
-                }
+
             }
+
+            //Check equiv from endnodes
+            for (int j = 0; j < edges.get(i).getEndnodes().size(); j++) {
+                Node node1 = (Node) edges.get(i).getEndnodes().keySet().toArray()[j];
+                Node node2 =(Node) digramRule.edges.get(i).getEndnodes().keySet().toArray()[j];
+                if (internalNodes.contains(node1)) {
+                    if (!edges.get(i).getEndnodes().get(node1).equals(digramRule.edges.get(i).getEndnodes().get(node2))){
+                        return false;
+                    }
+                }
+
+            }
+
         }
 
         return true;
     }
 
+    public int getEquivOffset(Node node) {
+        return mapEquivOffset.get(node);
+    }
+
+    public List<Node> getInternalNodes() {
+        return internalNodes;
+    }
+
+    public List<Node> getExternalNodes() {
+        return externalNodes;
+    }
+
+    public List<Edge> getEdges() {
+        return edges;
+    }
+
     @Override
-    public boolean equals2(Object obj) {
-        DigramRule digramRule = (DigramRule) obj;
-        if (!digramType.equals(digramRule.digramType)) {
-            return false;
+    public String toString() {
+        String string = "DigramRule " + nonterminal + " Type " + digramType + " NumOcc:" + occurrences.size() + " InternalNodes: ";
+        for (Node node : internalNodes) {
+            string += node + "; ";
         }
+        string += "# Edges: ";
+        for (Edge edge : edges) {
+            string += edge.shortToString() + "; ";
+        }
+        return string;
+    }
 
-        //check nodes
-        if (!(internalNodes.size() == digramRule.internalNodes.size() && externalNodes.size() == digramRule.externalNodes.size())) {
-            return false;
-        }
-        for (int i = 0; i < internalNodes.size(); i++) {
-            if (!internalNodes.get(i).equals(digramRule.internalNodes.get(i))) {
-                return false;
-            }
-        }
-        for (int i = 0; i < externalNodes.size(); i++) {
-            if (!externalNodes.get(i).equals(digramRule.externalNodes.get(i))) {
-                return false;
-            }
-        }
 
-        //EdgeStartNodes
-        if (!(edgeStartnodes.size() == digramRule.edgeStartnodes.size() && edgeEndNodes.size() == digramRule.edgeEndNodes.size())) {
-            return false;
-        }
-        for (String edgeID : edgeStartnodes.keySet()) {
-            if (digramRule.edgeStartnodes.get(edgeID) == null && edgeStartnodes.get(edgeID).size() != digramRule.edgeStartnodes.get(edgeID).size()) {
-                return false;
-            }
-            for (String nodeID : edgeStartnodes.get(edgeID).keySet()) {
-                if (digramRule.edgeStartnodes.get(edgeID).get(nodeID) == null) {
-                    return false;
-                }
-                if (!edgeStartnodes.get(edgeID).get(nodeID).equals(digramRule.edgeStartnodes.get(edgeID).get(nodeID))) {
-                    return false;
-                }
-            }
-        }
-
-        //EdgeStartNodes
-        if (!(edgeEndNodes.size() == digramRule.edgeEndNodes.size() && edgeEndNodes.size() == digramRule.edgeEndNodes.size())) {
-            return false;
-        }
-        for (String edgeID : edgeEndNodes.keySet()) {
-            if (digramRule.edgeEndNodes.get(edgeID) == null && edgeEndNodes.get(edgeID).size() != digramRule.edgeEndNodes.get(edgeID).size()) {
-                return false;
-            }
-            for (String nodeID : edgeEndNodes.get(edgeID).keySet()) {
-                if (digramRule.edgeEndNodes.get(edgeID).get(nodeID) == null) {
-                    return false;
-                }
-                if (!edgeEndNodes.get(edgeID).get(nodeID).equals(digramRule.edgeEndNodes.get(edgeID).get(nodeID))) {
-                    return false;
-                }
-            }
-        }
-
-        return true;
+    public synchronized void addOccurrence(DigramOccurrence digramOccurrence) {
+        occurrences.add(digramOccurrence);
     }
 }

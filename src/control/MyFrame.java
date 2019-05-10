@@ -16,8 +16,8 @@
 //import javax.swing.border.EmptyBorder;
 //
 //import model.*;
+//import model.Digram.DigramRule;
 //import model.Graph.*;
-//import org.graphstream.graph.Graph;
 //import org.graphstream.graph.implementations.MultiGraph;
 //import org.graphstream.ui.swingViewer.DefaultView;
 //import org.graphstream.ui.view.Viewer;
@@ -60,7 +60,7 @@
 //    /**
 //     * The displayed graph on the UI.
 //     */
-//    private final Graph graph;
+//    private final MultiGraph graph;
 //
 //    /**
 //     * Button for the next step of the step-by-step simulation.
@@ -250,8 +250,8 @@
 //                currentPath = "" + chooser.getSelectedFile();
 //
 //                txtPathArray.setText(currentPath);
-//                HyperGraph hyperGraph = controller.importGraph(currentPath);
-//                newGraphSelected(hyperGraph);
+//                Graph graph = controller.importGraph(currentPath);
+//                newGraphSelected(graph);
 //
 //
 //            }
@@ -298,8 +298,8 @@
 //        });
 //
 //
-//        HyperGraph mygraph=new HyperGraph();
-//        mygraph = Util.createSampleGraph();
+//        Graph mygraph=new Graph();
+//        mygraph = Util.createDebuggingGraph2();
 //        mygraph = controller.importGraph(INITIALE_PATH);
 //        newGraphSelected(mygraph);
 //
@@ -372,7 +372,7 @@
 //     * @param graph the graph which is to be displayed.
 //     * @param nodes the nodes which should be displayed.
 //     */
-//    private void displayNodes(Graph graph, HashMap<Integer, Node> nodes) {
+//    private void displayNodes(MultiGraph graph, HashMap<Integer, Node> nodes) {
 //        for (Map.Entry<Integer, Node> entry : nodes.entrySet()) {
 //            Node graphNode = entry.getValue();
 //
@@ -389,10 +389,10 @@
 //     * @param graph the graph which is to be displayed.
 //     * @param edges the edges which should be displayed.
 //     */
-//    private void displayEdges(Graph graph, HashMap<Integer, Edge> edges) {
+//    private void displayEdges(MultiGraph graph, HashMap<Integer, Edge> edges) {
 //        for (Map.Entry<Integer, Edge> entry : edges.entrySet()) {
-//            if (entry.getValue() instanceof SimpleEdge) {
-//                SimpleEdge myEdge = (SimpleEdge) entry.getValue();
+//            if (entry.getValue() instanceof Edge) {
+//                Edge myEdge = (Edge) entry.getValue();
 //                graph.addEdge(getIDString(myEdge), getIDString(myEdge.getStartnode()), getIDString(myEdge.getEndnode()), true);
 //
 //            } else {
@@ -469,14 +469,14 @@
 //    public void showAllDigrams(List<Digram> digrams) {
 //
 //        textArea.append("\n");
-//        for (Digram digram : digrams) {
+//        for (DigramRule digram : digrams) {
 //            textArea.append(digram.toString() + "\n");
 //            System.out.println(digram.toString());
 //        }
 //        textArea.append("\n");
 //        int numInternalNodes = 0;
 //        int nunInternalEdges = 0;
-//        for (Digram digram : digrams) {
+//        for (DigramRule digram : digrams) {
 //
 //            Tuple<Integer, Integer> numInternalElements = digram.getNumInternalElements();
 //            numInternalNodes += numInternalElements.x;
@@ -495,14 +495,14 @@
 //
 //    /**
 //     * Resets the UI for a new compression process for the HyperGraph in the parameter.
-//     * @param hyperGraph the HyperGraph which will be the next graph for the compression.
+//     * @param graph the HyperGraph which will be the next graph for the compression.
 //     */
-//    private void newGraphSelected(HyperGraph hyperGraph) {
+//    private void newGraphSelected(Graph graph) {
 //        graph.clear();
-//        displayGraph(hyperGraph);
+//        displayGraph(graph);
 //        textArea.setText("");
-//        lblNodeSize.setText("" + hyperGraph.getAllNodes().size());
-//        lblEdgeSize.setText("" + hyperGraph.getAllEdges().size());
+//        lblNodeSize.setText("" + graph.getAllNodes().size());
+//        lblEdgeSize.setText("" + graph.getAllEdges().size());
 //
 //        btnNextStep.setEnabled(false);
 //        lblNextDigram.setVisible(false);

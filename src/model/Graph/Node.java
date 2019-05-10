@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class Node extends GraphElement {
 
+    private int numEquivClasses;
+
     /**
      * Constructor of Node.
      *
@@ -19,9 +21,19 @@ public class Node extends GraphElement {
      */
     public Node(String label) {
         super(label);
+        numEquivClasses = 1;
+    }
+
+    public Node(String label, int numEquivClasses) {
+        super(label);
+        this.numEquivClasses = numEquivClasses;
     }
 
     public Node deepCopy() {
-        return new Node(new String(label) );
+        return new Node(label);
+    }
+
+    public int getNumEquivClasses() {
+        return numEquivClasses;
     }
 }

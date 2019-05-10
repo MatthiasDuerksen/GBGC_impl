@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class DigramLists {
 
-    private Map<DigramType, DigramMap> digramTypeMap = new HashMap<>();
+    private  Map<DigramType, DigramMap> digramTypeMap = new HashMap<>();
     private static DigramLists instance;
 
     private DigramLists() {
@@ -61,6 +61,10 @@ public class DigramLists {
 
         return string;
 
+    }
+
+    public void resetDigramLists(){
+        digramTypeMap=new HashMap<>();
     }
 
 }

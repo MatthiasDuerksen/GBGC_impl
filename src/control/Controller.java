@@ -87,7 +87,7 @@
 //        if (graph != null) {
 //            CompressionControl compressionControl = new CompressionControl(graph);
 //
-//            List<Tuple<Graph, List<DigramRule>>> tuples = compressionControl.graphCompression(true);
+//            List<Tuple<Graph, List<DigramRule>>> tuples = compressionControl.graphCompression();
 //            guiController.setButtonNextStep();
 //            displayCompression(tuples);
 //        } else {

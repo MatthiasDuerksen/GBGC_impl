@@ -30,4 +30,16 @@ public class DigramOccurrence {
     public DigramType getDigramType() {
         return digramRule.getDigramType();
     }
+
+    public List<Node> getInternalNodes() {
+        return internalNodes;
+    }
+
+    public List<Node> getExternalNodes() {
+        return externalNodes;
+    }
+
+    public List<Edge> getEdges() {
+        return edges;
+    }
 }

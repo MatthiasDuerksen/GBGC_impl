@@ -1,8 +1,6 @@
 package model.Graph;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 
 public class Graph {
 
@@ -70,19 +68,25 @@ public class Graph {
     /**
      * Delete a node from the graph.
      *
-     * @param node node which should be deleted.
+     * @param graphElement which should be deleted.
      */
-    public void delete(Node node) {
-        nodes.remove(node.getId());
+    public void delete(GraphElement graphElement) {
+        if (graphElement instanceof Node) {
+            nodes.remove(graphElement.getId());
+        } else {
+            edges.remove(graphElement.getId());
+        }
     }
 
     /**
      * Deletes an edge from the graph.
      *
-     * @param edge edge which should be deleted.
+     * @param graphElementList which should be deleted.
      */
-    public void delete(Edge edge) {
-        edges.remove(edge.getId());
+    public void delete(List<GraphElement> graphElementList) {
+        for (GraphElement graphElement : graphElementList) {
+            delete(graphElement);
+        }
     }
 
     /**
@@ -104,16 +108,25 @@ public class Graph {
     }
 
     public String toString() {
-        String string = "HyperGraph: Nodesize: " + nodes.size() + ", Edgesize: " + edges.size() + "\n";
+        String string = "HyperGraph: NodeSize: " + nodes.size() + ", EdgeSize: " + edges.size() + "\n";
         for (Map.Entry<Integer, Node> entry : nodes.entrySet()) {
             Node node = entry.getValue();
             string += "Node " + node.toString() + ": ";
-            for (Map.Entry<Integer, Edge> entry2 : edges.entrySet()) {
-                Edge edge = entry2.getValue();
-                string += "Edge" + edge.toString() + ": ";
+            for (Edge edge : getAllIncidentEdges(node)) {
+                string += "Edge";
+                if (edge.getEndnodes().containsKey(node)) {
+                    string += "<";
+                }
+                if (edge.getStartnodes().containsKey(node)) {
+                    string += ">";
+                }
+                string += edge.shortToString() + ":";
 
             }
             string += "\n";
+        }
+        for (Edge edge : edges.values()) {
+            string += "Edge:" + edge + "\n";
         }
         return string;
 
@@ -143,5 +156,9 @@ public class Graph {
             }
         }
         return edges;
+    }
+
+    public int size() {
+        return getAllEdges().size()+getAllNodes().size();
     }
 }

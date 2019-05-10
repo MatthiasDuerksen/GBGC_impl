@@ -43,24 +43,6 @@ public class DigramMap {
         return digramType;
     }
 
-    public synchronized void addOccurences(Node node1, Node node2, Edge edge1, Edge edge2) {
-        switch (getDigramType()) {
-            case BASIC_NODE_DIGRAM:
-
-                break;
-            case CIRCLE_DIGRAM:
-
-                break;
-            case ADJACENCY_DIGRAM:
-
-                break;
-            default:
-                throw new IllegalArgumentException("Wrong DigramType");
-        }
-
-
-    }
-
 
     @Override
     public String toString() {
@@ -71,7 +53,7 @@ public class DigramMap {
         return string;
     }
 
-    public DigramRule getDigramRule(DigramRule digramRule) {
+    public synchronized DigramRule getDigramRule(DigramRule digramRule) {
         for (DigramRule rule : digramRuleList) {
             if (digramRule.equals(rule)) {
                 return rule;

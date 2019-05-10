@@ -2,10 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd558b6f-a4d2-44b9-accd-3994e8c61d78" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/collection_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/arq.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/infer.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/iri.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/juuid.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/nquads.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/ntriples.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/qparse.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/rdfcat.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/rdfcompare.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/rdfcopy.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/rdfdiff.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/rdfparse.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/rdfxml.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/riot.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/rset.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/rsparql.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/rupdate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/schemagen.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/sparql.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdb2_tdbbackup.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdb2_tdbcompact.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdb2_tdbdump.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdb2_tdbloader.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdb2_tdbquery.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdb2_tdbstats.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdb2_tdbupdate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdbbackup.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdbdump.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdbloader.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdbquery.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdbstats.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/tdbupdate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/trig.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/turtle.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/uparse.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/update.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/utf8.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/wwwdec.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bat/wwwenc.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/arq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/infer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/iri" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/jena" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/juuid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/nquads" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/ntriples" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/qparse" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/rdfcat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/rdfcompare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/rdfcopy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/rdfdiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/rdfparse" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/rdfxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/riot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/rset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/rsparql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/rupdate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/schemagen" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/sparql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdb2.tdbbackup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdb2.tdbcompact" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdb2.tdbdump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdb2.tdbloader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdb2.tdbquery" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdb2.tdbstats" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdb2.tdbupdate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbbackup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbdump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbloader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbloader2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbloader2common" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbloader2data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbloader2index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbquery" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbstats" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/tdbupdate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/trig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/turtle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/uparse" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/update" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/utf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/wwwdec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/bin/wwwenc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benötigte Libs/apache-jena-3.11.0/src-examples/arq/examples/riot/Ex_WriteJsonLD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/control/commpressionSteps/DigramOccurrencesReplacer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/control/commpressionSteps/DigramUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/control/commpressionSteps/RuleGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/control/graphImporter/RDFImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GBGC_impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GBGC_impl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GBGC_impl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GBGC_impl/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GBGC_impl/GBGC_impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GBGC_impl/GBGC_impl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/CompressionControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/CompressionControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/control/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/GraphInputControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/GraphInputControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/MyFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/control/SearchWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/SearchWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/commpressionSteps/NewDigramFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/commpressionSteps/NewDigramFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Digram/DigramRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Digram/DigramRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Digram/RuleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Digram/RuleGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Digram/DigramType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Digram/DigramType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Digram/RuleGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/DigramList/DigramLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DigramList/DigramLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/DigramOccurrence/DigramOccurrence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DigramOccurrence/DigramOccurrence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Graph/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Graph/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Graph/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Graph/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,14 +126,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DigramMap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/DigramList/DigramMap.java">
+      <file leaf-file-name="MyFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/MyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="10940">
+              <caret line="547" column="15" selection-start-line="547" selection-start-column="15" selection-end-line="547" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -32,8 +138,8 @@
       <file leaf-file-name="DigramRule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Digram/DigramRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2289">
-              <caret line="173" column="20" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
+            <state relative-caret-position="303">
+              <caret line="171" column="10" selection-start-line="171" selection-start-column="10" selection-end-line="171" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewDigramFinder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/commpressionSteps/NewDigramFinder.java">
+      <file leaf-file-name="RDFImporter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/control/graphImporter/RDFImporter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+            <state relative-caret-position="403">
+              <caret line="43" column="41" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,68 +159,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchWorker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/SearchWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-440">
-              <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DigramOccurrence.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/DigramOccurrence/DigramOccurrence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RuleGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Digram/RuleGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Util.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Util.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/control/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="826">
-              <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DigramType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Digram/DigramType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="3480">
+              <caret line="176" column="33" selection-start-line="176" selection-start-column="33" selection-end-line="176" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,8 +174,71 @@
       <file leaf-file-name="Edge.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Graph/Edge.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5019#5020#0" expanded="true" />
+                <element signature="e#5058#5059#0" expanded="true" />
+                <element signature="e#5104#5105#0" expanded="true" />
+                <element signature="e#5185#5186#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1560">
+              <caret line="89" column="94" selection-start-line="89" selection-start-column="94" selection-end-line="89" selection-end-column="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1398#1399#0" expanded="true" />
+                <element signature="e#1448#1449#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomGraph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/RandomGraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1800">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphInputControl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/GraphInputControl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompressionControl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/CompressionControl.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="960">
-              <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+              <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,6 +264,10 @@
       <find>addCu</find>
       <find>HyperGraph</find>
       <find>Math.</find>
+      <find>System.out</find>
+      <find>usedDigramTypes</find>
+      <find>toArray(</find>
+      <find>Digram</find>
     </findStrings>
     <replaceStrings>
       <replace>Edge</replace>
@@ -170,29 +289,36 @@
         <option value="$PROJECT_DIR$/src/model/Graph/SimpleEdge.java" />
         <option value="$PROJECT_DIR$/src/model/Graph/HyperEdge.java" />
         <option value="$PROJECT_DIR$/src/model/Graph/HyperGraph.java" />
-        <option value="$PROJECT_DIR$/src/model/Graph/Graph.java" />
         <option value="$PROJECT_DIR$/src/control/commpressionSteps/GraphTransformer.java" />
         <option value="$PROJECT_DIR$/src/model/Digram/BasicDigram.java" />
         <option value="$PROJECT_DIR$/src/model/Digram/BasicDigram_old.java" />
-        <option value="$PROJECT_DIR$/src/control/Controller.java" />
-        <option value="$PROJECT_DIR$/src/control/GraphInputControl.java" />
-        <option value="$PROJECT_DIR$/src/control/MyFrame.java" />
         <option value="$PROJECT_DIR$/src/control/RandomGraph.java" />
-        <option value="$PROJECT_DIR$/src/control/commpressionSteps/NewDigramFinder.java" />
-        <option value="$PROJECT_DIR$/src/control/Util.java" />
-        <option value="$PROJECT_DIR$/src/control/CompressionControl.java" />
         <option value="$PROJECT_DIR$/src/model/Graph/GraphElementUsage.java" />
-        <option value="$PROJECT_DIR$/src/model/DigramList/DigramLists.java" />
         <option value="$PROJECT_DIR$/src/model/Graph/GraphElement.java" />
-        <option value="$PROJECT_DIR$/src/model/Graph/Node.java" />
-        <option value="$PROJECT_DIR$/src/model/Graph/Edge.java" />
+        <option value="$PROJECT_DIR$/src/model/DigramList/DigramMap.java" />
+        <option value="$PROJECT_DIR$/src/model/Digram/RuleGenerator.java" />
+        <option value="$PROJECT_DIR$/src/control/commpressionSteps/DigramOccurencesReplacer.java" />
+        <option value="$PROJECT_DIR$/src/model/DigramList/DigramLists.java" />
+        <option value="$PROJECT_DIR$/src/control/commpressionSteps/DigramUpdater.java" />
         <option value="$PROJECT_DIR$/src/model/DigramOccurrence/DigramOccurrence.java" />
         <option value="$PROJECT_DIR$/src/model/Digram/DigramType.java" />
-        <option value="$PROJECT_DIR$/src/model/DigramList/DigramMap.java" />
-        <option value="$PROJECT_DIR$/src/model/Digram/DigramRule.java" />
+        <option value="$PROJECT_DIR$/src/model/Graph/Node.java" />
+        <option value="$PROJECT_DIR$/src/model/Graph/Graph.java" />
+        <option value="$PROJECT_DIR$/src/control/commpressionSteps/DigramOccurrencesReplacer.java" />
+        <option value="$PROJECT_DIR$/src/control/commpressionSteps/NewDigramFinder.java" />
+        <option value="$PROJECT_DIR$/src/control/SearchTest.java" />
+        <option value="$PROJECT_DIR$/test/SearchTest.java" />
+        <option value="$PROJECT_DIR$/src/model/Graph/Edge.java" />
+        <option value="$PROJECT_DIR$/src/control/commpressionSteps/RuleGenerator.java" />
         <option value="$PROJECT_DIR$/src/control/SearchWorker.java" />
-        <option value="$PROJECT_DIR$/src/model/Digram/RuleGenerator.java" />
+        <option value="$PROJECT_DIR$/src/model/Digram/DigramRule.java" />
+        <option value="$PROJECT_DIR$/src/control/GraphInputControl.java" />
         <option value="$PROJECT_DIR$/src/control/Config.java" />
+        <option value="$PROJECT_DIR$/src/control/CompressionControl.java" />
+        <option value="$PROJECT_DIR$/src/control/Controller.java" />
+        <option value="$PROJECT_DIR$/src/control/MyFrame.java" />
+        <option value="$PROJECT_DIR$/src/control/Util.java" />
+        <option value="$PROJECT_DIR$/src/control/graphImporter/RDFImporter.java" />
       </list>
     </option>
   </component>
@@ -206,10 +332,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="2120" />
+    <option name="height" value="1285" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -220,7 +346,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,6 +357,11 @@
               <item name="GBGC_impl" type="b2602c69:ProjectViewProjectNode" />
               <item name="GBGC_impl" type="462c0819:PsiDirectoryNode" />
               <item name="benötigte Libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GBGC_impl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GBGC_impl" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GBGC_impl" type="b2602c69:ProjectViewProjectNode" />
@@ -285,24 +415,43 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="Graph" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GBGC_impl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GBGC_impl" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GBGC_impl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jena/commons-codec-1.11.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Matthias-PC\git\GBGC_impl\lib\jena" />
+      <recent name="C:\Users\Matthias-PC\git\GBGC_impl\benötigte Libs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -316,36 +465,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Util">
+  <component name="RunManager" selected="Application.RDFImporter">
     <configuration name="MyFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="control.MyFrame" />
       <module name="GBGC_impl" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="control.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="NewDigramFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="control.commpressionSteps.NewDigramFinder" />
+    <configuration name="RDFImporter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="control.graphImporter.RDFImporter" />
       <module name="GBGC_impl" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="control.commpressionSteps.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="RandomGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="control.RandomGraph" />
-      <module name="GBGC_impl" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="control.*" />
+          <option name="PATTERN" value="control.graphImporter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -356,13 +494,59 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="control.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GBGC_impl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test.SearchTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SearchTest.basicDigram" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GBGC_impl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test.SearchTest" />
+      <option name="METHOD_NAME" value="basicDigram" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -404,16 +588,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.MyFrame" />
-      <item itemvalue="Application.RandomGraph" />
-      <item itemvalue="Application.NewDigramFinder" />
       <item itemvalue="Application.Util" />
+      <item itemvalue="JUnit.SearchTest.basicDigram" />
+      <item itemvalue="JUnit.SearchTest" />
+      <item itemvalue="Application.RDFImporter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RDFImporter" />
         <item itemvalue="Application.Util" />
+        <item itemvalue="JUnit.SearchTest" />
+        <item itemvalue="JUnit.SearchTest.basicDigram" />
         <item itemvalue="Application.MyFrame" />
-        <item itemvalue="Application.NewDigramFinder" />
-        <item itemvalue="Application.RandomGraph" />
       </list>
     </recent_temporary>
   </component>
@@ -437,12 +623,53 @@
       <workItem from="1555489766652" duration="15542000" />
       <workItem from="1555511596135" duration="10623000" />
       <workItem from="1555574756601" duration="11459000" />
-      <workItem from="1556094524742" duration="4023000" />
+      <workItem from="1556094524742" duration="9587000" />
+      <workItem from="1556107158344" duration="6766000" />
+      <workItem from="1556180575518" duration="18102000" />
+      <workItem from="1556266541445" duration="15957000" />
+      <workItem from="1556555304315" duration="599000" />
+      <workItem from="1556613279066" duration="9787000" />
+      <workItem from="1556784855528" duration="1430000" />
+      <workItem from="1557162989371" duration="1197000" />
+      <workItem from="1557312199968" duration="599000" />
+      <workItem from="1557392336963" duration="2030000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SearchTest_basicDigram - 2019.04.26 at 12h 11m 06s.xml">
+      <configuration name="SearchTest.basicDigram" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest_basicDigram - 2019.04.26 at 12h 40m 16s.xml">
+      <configuration name="SearchTest.basicDigram" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest - 2019.04.26 at 12h 40m 23s.xml">
+      <configuration name="SearchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest - 2019.04.26 at 12h 41m 13s.xml">
+      <configuration name="SearchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest - 2019.04.26 at 12h 41m 59s.xml">
+      <configuration name="SearchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest - 2019.04.26 at 12h 42m 34s.xml">
+      <configuration name="SearchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest - 2019.04.26 at 14h 07m 16s.xml">
+      <configuration name="SearchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest - 2019.04.26 at 14h 10m 42s.xml">
+      <configuration name="SearchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest - 2019.04.26 at 14h 12m 59s.xml">
+      <configuration name="SearchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest - 2019.04.26 at 14h 13m 27s.xml">
+      <configuration name="SearchTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59762000" />
+    <option name="totallyTimeSpent" value="121793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -457,56 +684,56 @@
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32931727" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32931727" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3635347" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32885906" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5116279" visible="true" weight="0.13753057" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5116279" visible="true" weight="0.14547677" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.4883721" side_tool="true" visible="true" weight="0.058679707" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.4883721" side_tool="true" visible="true" weight="0.03789731" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995984" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35682327" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.26606426" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.26286355" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32931727" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.2951807" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32929292" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16136919" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32929292" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.29685917" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16136919" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,47 +745,112 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/control/commpressionSteps/NewDigramFinder.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="1" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/control/commpressionSteps/DigramOccurrencesReplacer.java</url>
+          <line>38</line>
+          <properties class="control.commpressionSteps.DigramOccurrencesReplacer" method="replaceToANode">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/control/commpressionSteps/NewDigramFinder.java</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/src/model/Digram/DigramRule.java</url>
+          <line>138</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/Digram/DigramRule.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>digramRule.edges.get(i).getEndnodes().get(node2)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>edges.get(i).getEndnodes().get(node1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>digramRule.edges.get(i).getEndnodes().get(node2</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>edges.get(i).isSameEdge(digramRule.edges.get(i))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>externalNodes.get(i).getLabel()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>digramRule.internalNodes.get(i).getLabel()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>internalNodes.get(i).getLabel()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>internalNodes.get(i).getLabel().equals(digramRule.internalNodes.get(i).getLabel())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>digramRule.getNonterminal()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>edge.startnodes.get(node) != null</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>startnodes.get(node)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>edge.isCircle()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>!(internalNodes.size() == digramRule.internalNodes.size() &amp;&amp; externalNodes.size() == digramRule.externalNodes.size())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>edge.getStartnodes().keySet()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>internalNodes.size() == digramRule.internalNodes.size()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/control/CompressionControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7440">
-          <caret line="384" column="42" selection-start-line="384" selection-start-column="30" selection-end-line="384" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2260">
-          <caret line="126" column="42" lean-forward="true" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/GraphInputControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/RDFReader.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/DigramOccurrence/IDigramOccurrence.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/Digram/DigramTypes.java" />
     <entry file="file://$PROJECT_DIR$/src/model/Digram/Digram.java" />
     <entry file="file://$PROJECT_DIR$/src/model/Digram/IDigram.java" />
     <entry file="file://$PROJECT_DIR$/src/model/DigramOccurrence/IDigramOccurrence.java" />
@@ -612,71 +904,10 @@
     <entry file="file://$PROJECT_DIR$/src/model/Digram/BasicDigram_old.java" />
     <entry file="file://$PROJECT_DIR$/src/model/Digram/Digram.java" />
     <entry file="file://$PROJECT_DIR$/src/model/DigramList/DigramList.java" />
-    <entry file="file://$PROJECT_DIR$/src/control/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="126" lean-forward="true" selection-end-line="208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/GraphInputControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="60" column="58" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/MyFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="359" column="32" selection-end-line="553" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/RandomGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#5748#5749#0" expanded="true" />
-            <element signature="e#5784#5785#0" expanded="true" />
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/CompressionControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DigramList/DigramLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -684,121 +915,182 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Graph/GraphElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Graph/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Graph/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Graph/Edge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/DigramOccurrence/DigramOccurrence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="50">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Graph/GraphElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="30" column="55" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/commpressionSteps/DigramUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/DigramList/DigramLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/SearchTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/control/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Digram/DigramType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="60">
+          <caret line="3" column="79" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/SearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/DigramList/DigramMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="344">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Digram/DigramRule.java">
+    <entry file="file://$PROJECT_DIR$/src/control/commpressionSteps/RuleGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2289">
-          <caret line="173" column="20" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/commpressionSteps/NewDigramFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="344">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/control/SearchWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+        <state relative-caret-position="174">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/commpressionSteps/NewDigramFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/commpressionSteps/DigramOccurrencesReplacer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Graph/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Digram/RuleGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Graph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/RandomGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/control/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="1800">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/CompressionControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="89" column="94" selection-start-line="89" selection-start-column="94" selection-end-line="89" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/GraphInputControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/MyFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10940">
+          <caret line="547" column="15" selection-start-line="547" selection-start-column="15" selection-end-line="547" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Digram/DigramRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="171" column="10" selection-start-line="171" selection-start-column="10" selection-end-line="171" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -807,8 +1099,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/control/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+        <state relative-caret-position="3480">
+          <caret line="176" column="33" selection-start-line="176" selection-start-column="33" selection-end-line="176" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Graph/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5019#5020#0" expanded="true" />
+            <element signature="e#5058#5059#0" expanded="true" />
+            <element signature="e#5104#5105#0" expanded="true" />
+            <element signature="e#5185#5186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/graphImporter/RDFImporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -829,7 +1148,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -852,7 +1171,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>12</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -889,7 +1208,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>gs-core-1.3</last-edited>
+          <last-edited>collection-0.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

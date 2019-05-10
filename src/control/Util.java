@@ -15,8 +15,7 @@ import model.Graph.Edge;
 class Util {
 
     public static void main(String[] a) {
-        createTempGraph();
-        System.out.println(DigramLists.getInstance().toString());
+        createDebuggingGraph2();
     }
 
     public static Graph createTempGraph() {
@@ -29,9 +28,14 @@ class Util {
         nodes[3] = new Node("v");
 
 
-        Edge[] edges = new Edge[2];
+        Edge[] edges = new Edge[6];
         edges[0] = new Edge(nodes[0], 1, nodes[1], 1);
         edges[1] = new Edge(nodes[2], 1, nodes[3], 1);
+        edges[2] = new Edge(nodes[0], 1, nodes[0], 1);
+        edges[3] = new Edge(nodes[2], 1, nodes[2], 1);
+        edges[4] = new Edge(nodes[0], 1, nodes[2], 1);
+        edges[5] = new Edge(nodes[1], 1, nodes[3], 1);
+
 
         for (Node node : nodes) {
             graph.add(node);
@@ -40,7 +44,39 @@ class Util {
             graph.add(edge);
         }
         CompressionControl control = new CompressionControl(graph);
-        control.graphCompression(false);
+        control.graphCompression();
+
+        return graph;
+    }
+
+    public static Graph createDebuggingGraph2() {
+        Graph graph = new Graph();
+
+        Node[] nodes = new Node[6];
+        nodes[0] = new Node("u");
+        nodes[1] = new Node("v");
+        nodes[2] = new Node("w");
+        nodes[3] = new Node("x");
+        nodes[4] = new Node("v");
+        nodes[5] = new Node("w");
+
+
+        Edge[] edges = new Edge[5];
+        edges[0] = new Edge(nodes[0], 1, nodes[1], 1);
+        edges[1] = new Edge(nodes[1], 1, nodes[2], 1);
+        edges[2] = new Edge(nodes[3], 1, nodes[4], 1);
+        edges[3] = new Edge(nodes[4], 1, nodes[5], 1);
+        edges[4] = new Edge(nodes[0], 1, nodes[3], 1);
+
+
+        for (Node node : nodes) {
+            graph.add(node);
+        }
+        for (Edge edge : edges) {
+            graph.add(edge);
+        }
+        CompressionControl control = new CompressionControl(graph);
+        control.graphCompression();
 
         return graph;
     }
@@ -76,7 +112,7 @@ class Util {
             graph.add(edge);
         }
         CompressionControl control = new CompressionControl(graph);
-        control.graphCompression(false);
+        control.graphCompression();
 
         return graph;
     }
@@ -112,7 +148,7 @@ class Util {
             graph.add(edge);
         }
         CompressionControl control = new CompressionControl(graph);
-        control.graphCompression(false);
+        control.graphCompression();
 
         return graph;
     }
@@ -138,7 +174,7 @@ class Util {
             graph.add(edge);
         }
         CompressionControl control = new CompressionControl(graph);
-        control.graphCompression(false);
+        control.graphCompression();
 
         return graph;
     }

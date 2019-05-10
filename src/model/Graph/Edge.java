@@ -16,12 +16,12 @@ public class Edge extends GraphElement {
     /**
      * the start nodes of the edge with his equivalence classes.
      */
-    private Map<Node, Integer> startnodes;
+    private LinkedHashMap<Node, Integer> startnodes;
 
     /**
      * the end nodes of the edge with his equivalence classes.
      */
-    private Map<Node, Integer> endnodes;
+    private LinkedHashMap<Node, Integer> endnodes;
 
     public static final String EMPTY_LABEL = "EMPTY_LABEL";
 
@@ -33,7 +33,7 @@ public class Edge extends GraphElement {
      * @param endnodes   the end nodes of the edge.
      * @param label      the label of the edge.
      */
-    public Edge(Map<Node, Integer> startnodes, Map<Node, Integer> endnodes, String label) {
+    public Edge(LinkedHashMap<Node, Integer> startnodes, LinkedHashMap<Node, Integer> endnodes, String label) {
         super(label);
         this.startnodes = startnodes;
         this.endnodes = endnodes;
@@ -103,12 +103,12 @@ public class Edge extends GraphElement {
 
 
     public Edge deepCopy() {
-        Map<Node, Integer> newStartNodes = new HashMap<>();
+        LinkedHashMap<Node, Integer> newStartNodes = new LinkedHashMap<>();
         for (Object obj : startnodes.keySet().toArray()) {
             Node node = (Node) obj;
             newStartNodes.put(node.deepCopy(), startnodes.get(node).intValue());
         }
-        Map<Node, Integer> newEndNodes = new HashMap<>();
+        LinkedHashMap<Node, Integer> newEndNodes = new LinkedHashMap<>();
         for (Object obj : endnodes.keySet().toArray()) {
             Node node = (Node) obj;
             newStartNodes.put(node.deepCopy(), endnodes.get(node).intValue());
@@ -116,5 +116,55 @@ public class Edge extends GraphElement {
         return new Edge(newStartNodes, newEndNodes, new String(label));
     }
 
+    /**
+     * Checks if the edges are the same but not necessary with same id
+     *
+     * @param edge
+     * @return
+     */
+    public boolean isSameEdge(Edge edge) {
+        if (!(startnodes.size() == edge.startnodes.size() && endnodes.size() == edge.endnodes.size())) {
+            return false;
+        }
+        for (int i = 0; i < startnodes.size(); i++) {
+            Node node1 = ((Node) startnodes.keySet().toArray()[i]);
+            Node node2 = ((Node) edge.startnodes.keySet().toArray()[i]);
+
+            if (!(node1.getLabel().equals(node2.getLabel()) && startnodes.get(node1) == edge.startnodes.get(node2))) {
+                return false;
+            }
+        }
+        for (int i = 0; i < endnodes.size(); i++) {
+            Node node1 = ((Node) endnodes.keySet().toArray()[i]);
+            Node node2 = ((Node) edge.endnodes.keySet().toArray()[i]);
+
+            if (!(node1.getLabel().equals(node2.getLabel()) && endnodes.get(node1) == edge.endnodes.get(node2))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        String string = "(" + getLabel() + ", " + getId() + ")";
+        string += "Start:";
+        for (Node node : getStartnodes().keySet()) {
+            string += "[" + node.getLabel() + ", " + node.getId() + "; " + getStartnodes().get(node) + "]";
+        }
+        string += "End:";
+        for (Node node : getEndnodes().keySet()) {
+            string += "[" + node.getLabel() + ", " + node.getId() + "; " + getEndnodes().get(node) + "]";
+        }
+        return string;
+    }
+
+    public String shortToString() {
+        return super.toString();
+    }
+
+    public boolean isIncidentTo(Node node) {
+        return startnodes.containsKey(node) || endnodes.containsKey(node);
+    }
 
 }

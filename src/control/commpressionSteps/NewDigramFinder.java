@@ -14,12 +14,7 @@ public class NewDigramFinder {
     /**
      * Indicated for which digramtypes are searched.
      */
-    private final List<DigramType> usedDigramTypes;
     private SearchWorker[] workers= new SearchWorker[Config.NUMBER_OF_SEARCHWORKERS];
-
-    public NewDigramFinder(List<DigramType> usedDigramTypes) {
-        this.usedDigramTypes = usedDigramTypes;
-    }
 
 
     public void seachForDigrams(Graph graph) {
